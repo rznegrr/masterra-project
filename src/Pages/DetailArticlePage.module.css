@@ -1,0 +1,82 @@
+.description img {
+  width: 1000px;
+  margin: 2rem 0;
+}
+
+.description strong {
+  font-size: 20px;
+}
+
+.description p {
+  margin: 1rem 0 2rem;
+  line-height: 1.7rem;
+  text-align: justify;
+}
+
+.form {
+  height: 400px;
+  width: 700px;
+  padding: 1rem;
+  margin-right: 30px;
+}
+
+.form .mainDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  width: 150px;
+  text-align: right;
+  margin: 10px 0;
+  color: #141414;
+}
+
+.form textarea {
+  width: 610px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid #cececeec;
+  border-radius: 5px;
+  height: 10rem;
+  resize: none;
+}
+
+.form input {
+  margin-left: 10px;
+  width: 300px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #cececeec;
+  border-radius: 5px;
+}
+
+.form input:focus,
+textarea:focus {
+  border-color: #b3b3b3;
+  outline: none;
+}
+
+.form button {
+  margin: 20px 0;
+  background-color: #616da7;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:640px) {
+    .form{
+        width: 300px;
+        margin-right: 5px;
+        margin-bottom: 50px;
+    }
+
+    .form input,.form textarea{
+        width: 280px;
+    }
+
+    .description strong {
+        font-size: 18px;
+      }
+}

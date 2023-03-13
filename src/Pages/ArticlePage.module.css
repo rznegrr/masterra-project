@@ -1,0 +1,7 @@
+.background{
+    object-fit: cover;
+    height:50vh;
+    width: 100%;
+    filter: brightness(60%);
+    margin-bottom: 3.5rem;
+}

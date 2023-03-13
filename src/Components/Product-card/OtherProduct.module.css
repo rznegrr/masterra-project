@@ -1,0 +1,56 @@
+.SwiperSlide{
+    padding-top: 20px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(209, 209, 209, 0.856);
+}
+
+.SwiperSlide img{
+    width: 170px;
+    margin: auto;
+}
+
+.SwiperSlide p{
+    text-align: right;
+    font-size: 15px; 
+    font-weight: bold;
+    color: #616DA7;
+    margin: 2.5rem 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.SwiperSlide span{
+    position: absolute;
+    left: 0%;
+    font-size: 14px;
+    margin: 10px 13px;
+}
+
+@media only screen and (max-width : 620px){
+    .SwiperSlide{
+        width: 200px;
+    }
+
+    .SwiperSlide p{
+        font-size: 12px;
+    }
+
+    .SwiperSlide{
+        height: 220px;
+    }
+
+    .SwiperSlide img{
+        width: 100px;
+    }
+
+    .SwiperSlide span{
+        font-size: 10px;
+    }
+}

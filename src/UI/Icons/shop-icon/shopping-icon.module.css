@@ -1,0 +1,50 @@
+.Shop{
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.Shop::after{
+    content: attr(data-number);
+    background-color: rgb(245, 24, 24);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    color: #fff;
+    top: 5px;
+    right: 0;
+    display: grid;
+    place-content: center;
+    transform: translateY(3px);
+    opacity: 0;
+    transition: all .25s;
+}
+
+.Shop:hover::after{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.icon{
+   max-width: 100%;
+}
+
+.Shop:hover .icon{
+    animation: shake 1s forwards;
+}
+
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+}

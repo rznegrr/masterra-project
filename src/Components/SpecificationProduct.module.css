@@ -1,0 +1,5 @@
+.before p{
+  background: -webkit-linear-gradient(#111827, #c9c9c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

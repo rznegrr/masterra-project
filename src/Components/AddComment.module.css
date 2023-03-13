@@ -1,0 +1,58 @@
+.form {
+  height: 400px;
+  width: 700px;
+  padding: 1rem;
+  margin-right: 40px;
+}
+
+.form .mainDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  width: 150px;
+  text-align: right;
+  margin: 10px 0;
+  color: #141414;
+}
+
+.form input,
+textarea {
+  width: 350px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #cececeec;
+  border-radius: 5px;
+}
+
+.form input:focus,
+textarea:focus {
+  border-color: #b3b3b3;
+  outline: none;
+}
+
+.form textarea {
+  height: 6rem;
+  resize: none;
+}
+
+.form button {
+  margin: 20px 0;
+  background-color: #616da7;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 620px) {
+  .form {
+    width: 300px;
+    margin-right: 10px;
+  }
+
+  .form input,
+  textarea {
+    width: 250px;
+  }
+}

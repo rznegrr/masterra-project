@@ -1,0 +1,104 @@
+.menu-style {
+  padding: 2px 15px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.active{
+  color: #616da7;
+}
+
+.menu-style:hover {
+  color: #616da7;
+}
+
+.fade {
+  height: 55vh;
+  width: 743px;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  cursor: pointer;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-buttons {
+  display: flex;
+  align-items: center;
+  animation: slide-animate 1.5s forwards;
+  transform: translateX(-100%);
+}
+
+.slide-animate h2 {
+  animation: slide-animate 1s forwards;
+  transform: translateX(-100%);
+}
+
+.slide-animate p {
+  animation: slide-animate 1.5s forwards;
+  transform: translateX(-100%);
+}
+
+@keyframes slide-animate {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .menu-style , .active{
+    font-size: 11px;
+    padding: 2px 10px;
+  }
+
+  .active{
+    font-size: 11px;
+    padding: 1px 10px;
+  }
+
+  .fade{
+    height: 25vh;
+  }
+
+  .slide-buttons{
+   display: none;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 640px){
+  .menu-style , .active{
+    font-size: 12px;
+    padding: 2px 10px;
+  }
+
+  .fade{
+    height: 28vh;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 750px){
+  .menu-style , .active{
+    font-size: 15px;
+    padding: 2px 15px;
+  }
+
+  .fade{
+    height: 45vh;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .menu-style , .active{
+    font-size: 20px;
+    padding: 2px 20px;
+  }
+}

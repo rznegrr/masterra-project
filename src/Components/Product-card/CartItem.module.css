@@ -1,0 +1,88 @@
+.Productcontainer {
+  width: 16rem;
+  height: 355px;
+  margin-top: 2.5rem;
+  border: 1px solid rgba(218, 218, 218, 0.918);
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+}
+
+.items {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Productcontainer:hover .items {
+  box-shadow: 4px 4px 6px rgba(104, 104, 104, 0.432);
+  opacity: 0.5;
+}
+
+.Productcontainer:hover .middle {
+  opacity: 1;
+}
+
+.button {
+  background-color: #616DA7;
+  color: white;
+  font-size: 16px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: all .2s ease-in;
+}
+
+.button:hover {
+  background-color: #686c7e;
+}
+
+.offPrice{
+  text-align: left;
+  font-size: 12px;
+  color: #616DA7;
+  margin-left: 8px;
+  margin-top: 4px;
+}
+
+@media only screen and (min-width:425px) and (max-width:640px){
+  .Productcontainer {
+    width: 10rem;
+    height: 250px;
+  }
+
+  .offPrice{
+    font-size: 10px;
+  }
+
+  .button{
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+@media only screen and (max-width:424px){
+  .Productcontainer {
+    width: 8rem;
+    height: 220px;
+  }
+
+  .offPrice{
+    font-size: 9px;
+    margin-top: 15px;
+  }
+
+  .button{
+    font-size: 8px;
+    padding: 4px 8px;
+  }
+}

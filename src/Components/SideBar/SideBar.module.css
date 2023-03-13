@@ -1,0 +1,28 @@
+.blogs-items {
+  display: flex;
+  margin-top: 1.5rem;
+  height: 80px;
+  width: 340px;
+  border: 1px solid #b8b8b88c;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+.blogs-items img {
+  align-self: center;
+  width: 100px;
+  height: 78px;
+  filter: brightness(80%);
+  border-radius: 5px;
+}
+
+@media screen and (max-width:1300px){ 
+  .blogs-items{
+    width: 280px;
+  }
+
+  .blogs-items img{
+    width: 90px;
+    height: 70px;
+  }
+}

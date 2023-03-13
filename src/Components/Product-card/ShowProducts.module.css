@@ -1,0 +1,37 @@
+.tab-button {
+  cursor: pointer;
+  font-size: 17px;
+  color: #616da7;
+  transition: all .1s ease;
+  outline: none;
+}
+
+.active{
+  color: #3c415e;
+  border-bottom: 1px dashed #3c415e;
+  font-size: 17px;
+}
+
+.tab-button:hover {
+  color: #4d4d4d;
+}
+
+.ProductsError {
+  text-align: center;
+  color: black;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 375px){
+    .tab-button , .active{
+        font-size: 8px;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 640px){
+  .tab-button , .active{
+      font-size: 12px;
+  }
+
+}

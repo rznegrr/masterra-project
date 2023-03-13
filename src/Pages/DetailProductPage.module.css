@@ -1,0 +1,52 @@
+.productList{
+    list-style: none;
+}
+
+.angle{
+    border-radius: 5px;
+    padding:2px 5px;
+    width: 18.3rem;
+    border: 1px solid rgb(212, 212, 212);
+    margin-top: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all .1s ease-in;
+}
+
+.angle:hover{
+    color: #616DA7;
+}
+
+.angle::before {
+    content: "\f104 ";
+    font-family: FontAwesome;
+    font-size: 14px;
+    padding-left:3px;
+  }
+
+@media screen and (max-width:640px){
+    .angle{
+        width: 13rem;
+      }
+      .productList{
+        height: 50rem;
+      }
+}
+
+@media only screen and (min-width:640px) and (max-width:1024px){
+      .productList{
+        height: 42rem;
+      }
+}
+
+@media screen and (min-width:1024px){
+      .productList{
+        height: 46rem;
+      }
+}
+
+@media only screen and (min-width:1280px){
+    .productList{
+        height: 25rem;
+      }
+}

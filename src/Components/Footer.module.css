@@ -1,0 +1,34 @@
+.footer h2{
+    /* color: rgb(235, 235, 235); */
+    font-size: 20px;
+    color: #ebebeb;
+    font-weight: bold;
+}
+
+.footer a{
+    color: #ebebeb;
+    transition: all .1s ease-in;
+}
+
+.footer a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.footer a::before{
+    content: "\f104 ";
+    font-family: FontAwesome;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width : 620px) {
+    .footer h2{
+        font-size: 14px;
+    }
+
+    .footer a{
+        font-size: 12px;
+    }
+    
+}
