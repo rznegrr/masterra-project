@@ -16,17 +16,17 @@ import CardContext from "../Store/ProductCart-Context";
 // import DetailProductItems from "../Components/DetailProduct/DetailProductItems";
 
 const ProductDetail = () => {
-    const [cartIsShown, setCartIsShown] = useState(false);
-    const {addItem} = useContext(CardContext)
-    const { productId } = useParams(); 
+  const [cartIsShown, setCartIsShown] = useState(false);
+  const { addItem } = useContext(CardContext)
+  const { productId } = useParams();
 
-    const ShowCartHandler = () => {
-      setCartIsShown(true);
-    };
-  
-    const HideCartHandler = () => {
-      setCartIsShown(false);
-    };
+  const ShowCartHandler = () => {
+    setCartIsShown(true);
+  };
+
+  const HideCartHandler = () => {
+    setCartIsShown(false);
+  };
   const [loading, setLoading] = useState(true);
   const [product, setProduct] = useState();
   const [tab, setTab] = useState({
@@ -75,25 +75,24 @@ const ProductDetail = () => {
 
   return (
     <Fragment>
-       {cartIsShown && <Login onHideCart={HideCartHandler} />}
-      <Header onShowCart={ShowCartHandler}/>
+      {cartIsShown && <Login onHideCart={HideCartHandler} />}
+      <Header onShowCart={ShowCartHandler} />
       <div className="bg-zinc-100 mt-0 md:mt-4 py-5 md:py-10 overflow-hidden">
         <div className={`${classes.productList}`}>
           <div className="grid grid-cols-12 w-[90vw] bg-white m-auto">
-            <div className="col-span-12 sm:col-span-6 xl:col-span-4 flex ">
-              <div className="flex flex-col items-start gap-y-2 mt-3 overflow-hidden mr-3">
+            <div className="col-span-12 sm:col-span-6 xl:col-span-4 flex flex-col md:flex-row-reverse md:mr-3">
+              <img src={product.image} className="w-40 xs:w-64 lg:w-80 xl:w-96 m-auto p-3" alt="product" />
+              <div className="flex md:flex-col items-start gap-x-2 mt-3 overflow-hidden mx-auto md:mx-0 md:gap-y-3">
                 {product.gallery.map((pics, index) => (
                   <li key={index}>
                     <img
                       className="w-[50px] md:w-[65px] border border-gray-400 rounded-xl p-1 cursor-pointer"
-                    
                       src={pics}
                       alt="product-gallery"
                     />
                   </li>
                 ))}
               </div>
-              <img src={product.image} className="w-40 xs:w-64 lg:w-80 xl:w-96 m-auto p-3" alt="product" />
             </div>
             <div className="col-span-12 sm:col-span-6 xl:col-span-4 mt-5 px-3">
               <p className="text-xl font-bold text-gray-900">{product.name}</p>
@@ -153,23 +152,23 @@ const ProductDetail = () => {
                   {items}
                 </li>
               ))}
-              <p className="text-sm mt-5 mb-4">
+              <p className="text-sm mt-4 mb-2">
                 فروشنده : <span className="text-sm text-[#616DA7]">مسترا</span>
               </p>
               <p className={classes.angle}>جستجو در فروشندگان دیگر</p>
-              <button className="bg-[#616DA7] text-white w-52 md:w-[18.3rem] py-1 rounded-md mt-2" onClick={()=>addItem(productId)}>
+              <button className="bg-[#616DA7] text-white text-sm md:text-base w-52 md:w-[18.3rem] py-1 rounded-md mt-1" onClick={() => addItem(productId)}>
                 افزودن به سبد خرید
               </button>
             </div>
           </div>
         </div>
-        <div className="bg-white w-[92vw] m-auto xs:mt-20 sm:mt-0">
+        <div className="bg-white w-[90vw] m-auto mt-16 xs:mt-32 sm:mt-0">
           <ul className="flex gap-x-10 mt-1 border-y px-5 py-4">
             <li className="cursor-pointer text-gray-900" onClick={() => showTabHandler("firstbtn")}>خصوصیات </li>
             <li className="cursor-pointer text-gray-900" onClick={() => showTabHandler("secondbtn")}>نظرات کاربران</li>
           </ul>
           {tab.firstbtn && <SpecificationProduct name={product.name} />}
-          {tab.secondbtn && <AddComment name={"ثبت دیدگاه"}/>}
+          {tab.secondbtn && <AddComment name={"ثبت دیدگاه"} />}
         </div>
         <div className="w-[95vw] mt-10 md:mt-20 m-auto">
           <p className="mb-10 text-center text-2xl font-bold">
@@ -178,7 +177,7 @@ const ProductDetail = () => {
           <OtherProduct />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </Fragment>
   );
 };
