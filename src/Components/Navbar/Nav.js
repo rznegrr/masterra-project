@@ -13,7 +13,7 @@ const Navbar = () => {
                 style={({ isActive }) => {
                   return isActive ? { color: "#616DA7" } : {};
                 }}
-                to="/Home"
+                to="/"
               >
                 خانه
               </NavLink>
