@@ -1,8 +1,8 @@
-
 const Account = (props) => {
   return (
-<div className="flex text-gray-700 h-8 mx-4 items-center w-36 justify-center rounded-full hover:text-info transition ease-in-out duration-300 cursor-pointer" 
-    onClick={props.onClick}>
+    <div 
+      className={props.className}
+      onClick={props.onClick}>
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"

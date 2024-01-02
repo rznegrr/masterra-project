@@ -41,7 +41,7 @@ const NewBlogs = () => {
 
   return (
     <div>
-      <section className="hidden xl:block relative h-[500px] mt-[17rem] mb-20">
+      <section className="hidden xl:block 2xl:hidden relative h-[500px] mt-[17rem] mb-20">
         <div className="absolute top-[-28%] right-[49%] flex flex-col">
           <span className="text-info">بلاگ مسترا</span>
           <span className="mt-4 text-3xl text-gray-800 mr-4 font-semibold">
@@ -50,10 +50,10 @@ const NewBlogs = () => {
         </div>
         <ul className="mr-[44rem]">{blogList}</ul>
       </section>
-      <section className="xl:hidden mt-14 lg:mt-20">
+      <section className="xl:hidden mt-14 lg:mt-20 2xl:block">
         <div className="flex justify-between items-center container mx-1">
-          <span className="text-info text-[18px] font-semibold md:text-xl">بلاگ مسترا</span>
-          <span className="text-gray-800 text-sm hover:text-info cursor-pointer transition-all ease-in duration-150">بیشتر بخوانید</span>
+          <span className="text-info text-[18px] font-semibold md:text-xl 2xl:text-5xl 2xl:my-10">بلاگ مسترا</span>
+          <span className="text-gray-800 text-sm hover:text-info cursor-pointer transition-all ease-in duration-150 2xl:text-3xl">بیشتر بخوانید</span>
         </div>
         <Articles />
       </section>

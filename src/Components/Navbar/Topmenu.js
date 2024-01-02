@@ -57,11 +57,12 @@ const Topmenu = (props) => {
                     ×
                   </button>
                   <ul>
-                    <li>حساب کاربری</li>
+                    <li>{!authCtx.isLoggedIn && <Account className={"flex transition ease-in-out duration-300 cursor-pointer"} onClick={props.onShowCart} />}
+                    </li>
                     <Link to={"/"}>
                       <li>صفحه اصلی</li>
                     </Link>
-                    <Link to={"/Products"}>             
+                    <Link to={"/Products"}>
                       <li>محصولات</li>
                     </Link>
                     <Link to={"/Articles"}>
@@ -100,7 +101,7 @@ const Topmenu = (props) => {
                 {/* <span>{getTotalPrice}</span> */}
               </Modal>
             )}
-            {!authCtx.isLoggedIn && <Account onClick={props.onShowCart} />}
+            {!authCtx.isLoggedIn && <Account className={"flex text-gray-700 h-8 mx-4 items-center w-36 justify-center rounded-full hover:text-info transition ease-in-out duration-300 cursor-pointer"} onClick={props.onShowCart} />}
             <SearchBox />
           </div>
           <div className="w-32 xs:w-36 lg:w-44 md:pr-2 lg:ml-6">
@@ -111,9 +112,9 @@ const Topmenu = (props) => {
       <div className="hidden xs:flex items-center md:hidden h-14 bg-gray-100 shadow-xl pr-3">
         <div className="flex items-center justify-between m-auto">
           <div className="flex items-center relative">
-            <ShoppingCartIcon onClick={ShowShopHandler}/>
+            <ShoppingCartIcon onClick={ShowShopHandler} />
             <span className={classes.shop}>{lengthOfItems}</span>
-            {!authCtx.isLoggedIn && <Account onClick={props.onShowCart} />}
+            {!authCtx.isLoggedIn && <Account className={"flex transition ease-in-out duration-300 cursor-pointer"} onClick={props.onShowCart} />}
           </div>
           <div>
             <SearchBox />

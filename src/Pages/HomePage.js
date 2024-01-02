@@ -2,7 +2,6 @@ import { Fragment, useState } from "react";
 import Header from "../Components/Header";
 import Brands from "../UI/Brands/Brands";
 import Category from "../Components/Category/Category";
-import CardTab from "../UI/Card-Tab/CardTab";
 import Slider from "../Components/Slider/Slider";
 import DescSection from "../UI/Desc-section/DescSection";
 import NewBlogs from "../Components/NewBlogs/NewBlogs";
@@ -27,7 +26,6 @@ const HomePage = () => {
       {cartIsShown && <Login onHideCart={HideCartHandler} />}
       <Header onShowCart={ShowCartHandler}/>
       <Slider />
-      <CardTab />
       <ShowProductsTab/>
       <Brands />
       <Category />

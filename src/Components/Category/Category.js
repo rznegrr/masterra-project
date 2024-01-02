@@ -33,8 +33,8 @@ const Category = () => {
 
   return (
     <div>
-      <div className="h-[65vh] xs:h-[75vh] sm:h-[90vh] md:h-[110vh]">
-        <p className="text-xl md:text-3xl font-semibold text-gray-800 text-center mt-14 md:mt-20">
+      <div className="h-[65vh] xs:h-[75vh] sm:h-[90vh] md:h-[110vh] 2xl:h-[80vh]">
+        <p className="text-xl md:text-3xl font-semibold text-gray-800 text-center mt-14 md:mt-20 2xl:my-20">
            دسته بندی محصولات
         </p>
         <ul className="flex gap-x-0 lg:gap-x-14 justify-center my-8 md:text-lg text-xs">
