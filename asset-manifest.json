@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kenzax-project/static/css/main.3c6bdf2f.css",
-    "main.js": "/kenzax-project/static/js/main.4a360135.js",
+    "main.css": "/kenzax-project/static/css/main.88ff9aa6.css",
+    "main.js": "/kenzax-project/static/js/main.bca4cbb8.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/kenzax-project/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/kenzax-project/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/kenzax-project/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -12,16 +12,10 @@
     "static/media/slider02.webp": "/kenzax-project/static/media/slider02.fac5ccd2bceb17a4c670.webp",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/kenzax-project/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/slider01.webp": "/kenzax-project/static/media/slider01.8762249056c59c73c880.webp",
-    "static/media/pict1.jpg": "/kenzax-project/static/media/pict1.8699a11a06093a06a8bd.jpg",
-    "static/media/pict2.jpg": "/kenzax-project/static/media/pict2.bc7e0215a89b7be0b45a.jpg",
     "static/media/category-stove.webp": "/kenzax-project/static/media/category-stove.214815e8c764bbb42acc.webp",
     "static/media/iranyekanwebregularfanum.woff": "/kenzax-project/static/media/iranyekanwebregularfanum.f01e9ae5ea918523d370.woff",
-    "static/media/p2.jpg": "/kenzax-project/static/media/p2.783ec8018f7fde361391.jpg",
     "static/media/category-wash.webp": "/kenzax-project/static/media/category-wash.d3f94af9e25834899f02.webp",
     "static/media/category-dishwash.webp": "/kenzax-project/static/media/category-dishwash.e517096260265ca9b4e5.webp",
-    "static/media/p4.jpg": "/kenzax-project/static/media/p4.947bd84ffafd2609f553.jpg",
-    "static/media/p3.jpg": "/kenzax-project/static/media/p3.bdbbc716ec85ac2bdf4e.jpg",
-    "static/media/p1.jpg": "/kenzax-project/static/media/p1.49e30cd277fdb35b5e44.jpg",
     "static/media/masterra.png": "/kenzax-project/static/media/masterra.1efc11820aa856561169.png",
     "static/media/category-refrigerator.webp": "/kenzax-project/static/media/category-refrigerator.5af972b425a6020054e6.webp",
     "static/media/bost.webp": "/kenzax-project/static/media/bost.73809481af862c6b7732.webp",
@@ -31,11 +25,11 @@
     "static/media/delmonti.webp": "/kenzax-project/static/media/delmonti.636c714314598629723a.webp",
     "static/media/devoo.webp": "/kenzax-project/static/media/devoo.f51ae5a4cbafb7015000.webp",
     "index.html": "/kenzax-project/index.html",
-    "main.3c6bdf2f.css.map": "/kenzax-project/static/css/main.3c6bdf2f.css.map",
-    "main.4a360135.js.map": "/kenzax-project/static/js/main.4a360135.js.map"
+    "main.88ff9aa6.css.map": "/kenzax-project/static/css/main.88ff9aa6.css.map",
+    "main.bca4cbb8.js.map": "/kenzax-project/static/js/main.bca4cbb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c6bdf2f.css",
-    "static/js/main.4a360135.js"
+    "static/css/main.88ff9aa6.css",
+    "static/js/main.bca4cbb8.js"
   ]
 }
