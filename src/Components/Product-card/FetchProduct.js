@@ -61,7 +61,7 @@ const FetchProduct = () => {
     />
   ));
   return (
-    <div className="grid grid-cols-12 container md:pr-7 ">{ProductsList}</div>
+    <div className="grid grid-cols-12 container xxs:pr-5 xs:pr-3 md:pr-7">{ProductsList}</div>
   );
 };
 

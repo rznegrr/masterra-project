@@ -7,7 +7,7 @@ const CategoryItem = (props) => {
   return (
     <div>
       <Link to={`/Products/${props.link}`}>
-        <img src={props.photo} className={`h-[55vh] 2xl:${classes.fade}`} alt="category-item" />
+        <img src={props.photo} className={`h-[55vh] ${classes.fade}`} alt="category-item" />
       </Link>
       <div className={`flex flex-col text-center ${classes["slide-animate"]}`}>
         <h2 className="text-md md:text-3xl font-bold text-gray-800 mt-7 md:mt-10">
