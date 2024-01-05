@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/masterra-project/static/css/main.c57377f9.css",
-    "main.js": "/masterra-project/static/js/main.be68608e.js",
+    "main.css": "/masterra-project/static/css/main.1d2f02d4.css",
+    "main.js": "/masterra-project/static/js/main.b196beeb.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/masterra-project/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/masterra-project/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/masterra-project/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -25,11 +25,11 @@
     "static/media/delmonti.webp": "/masterra-project/static/media/delmonti.636c714314598629723a.webp",
     "static/media/devoo.webp": "/masterra-project/static/media/devoo.f51ae5a4cbafb7015000.webp",
     "index.html": "/masterra-project/index.html",
-    "main.c57377f9.css.map": "/masterra-project/static/css/main.c57377f9.css.map",
-    "main.be68608e.js.map": "/masterra-project/static/js/main.be68608e.js.map"
+    "main.1d2f02d4.css.map": "/masterra-project/static/css/main.1d2f02d4.css.map",
+    "main.b196beeb.js.map": "/masterra-project/static/js/main.b196beeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.c57377f9.css",
-    "static/js/main.be68608e.js"
+    "static/css/main.1d2f02d4.css",
+    "static/js/main.b196beeb.js"
   ]
 }
