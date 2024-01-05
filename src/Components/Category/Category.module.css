@@ -102,3 +102,9 @@
     padding: 2px 20px;
   }
 }
+
+@media only screen and (min-width: 2000px){
+  .fade{
+    width: 100%;
+  }
+}
