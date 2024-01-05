@@ -7,7 +7,7 @@ const ShoppingCart = (props) => {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="shop-icon w-6 h-6 cursor-pointer hover:text-info text-gray-700 transition ease-in-out"
+        className="shop-icon w-6 h-6 cursor-pointer hover:text-info text-gray-700 transition ease-in-out xs:ml-5"
         onClick={props.onClick}
       >
         <path

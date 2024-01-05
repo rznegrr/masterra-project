@@ -110,11 +110,11 @@ const Topmenu = (props) => {
         </div>
       </div>
       <div className="hidden xs:flex items-center md:hidden h-14 bg-gray-100 shadow-xl pr-3">
-        <div className="flex items-center justify-between m-auto">
+        <div className="flex justify-between m-auto">
           <div className="flex items-center relative">
-            <ShoppingCartIcon onClick={ShowShopHandler} />
             <span className={classes.shop}>{lengthOfItems}</span>
-            {!authCtx.isLoggedIn && <Account className={"flex transition ease-in-out duration-300 cursor-pointer"} onClick={props.onShowCart} />}
+            <ShoppingCartIcon onClick={ShowShopHandler} />
+            {!authCtx.isLoggedIn && <Account className={"flex transition ease-in-out duration-300 cursor-pointer mr-5"} onClick={props.onShowCart} />}
           </div>
           <div>
             <SearchBox />
